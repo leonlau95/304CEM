@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Places</title>
+  {{> stylerefs}}
+</head>
+<body>
+
+{{> navbar}}
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img src="./big_ben.jpeg" width="1600" height="800">
+  
+</header>
+
+<div class="w3-content" style="max-width:1100px">
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="./winter.jpeg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Weather</h1><br>
+      <h5 class="w3-center">Winter</h5>
+      <p class="w3-large">Winter is the coldest season of the year in polar and temperature zones.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Click below Get Started! button to start your weather search</p>
+      <form action ="/weatherform" method="post">
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="submit" formaction="/weatherform">Get Started!</button>
+      </form>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Places</h1><br>
+      <p class="w3-large">This part help you search for the places that you want to search.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Click below Get Started! button to start your places search</p>
+      <form action ="/placesform" method="post">
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="submit" formaction="/placesform">Get Started!</button>
+      </form>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="./japan.jpeg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+<!-- <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Places and Weather</b></h1>
+    <h6>Welcome to the site of <span class="w3-tag">searching places and weather</span></h6>
+</header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Getting Started</h3>
+      <p>Click on Search at the top of this page</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Node.js Express.js Mongodb</h3>
+      <p>Backend built using node.js, server run express.js</p>
+      <p>and Mongodb for database</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Front end hbs.js</h3>
+      <p>Front end built using handlebars.js</p>
+    </div>
+  </div>
+</div> -->
+
+{{> footer}}
+
+</body>
+</html>
